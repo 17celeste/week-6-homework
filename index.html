@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>World Wide Weather App</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+
+  <body>
+    <h1>World Wide Weather App</h1>
+    <br />
+         <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Enter city"
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm w-100"
+              />
+            </div>
+            <div class="col-3">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
+                Current
+              </button>
+            </div>
+          </div>
+        </form>
+       <h2>date, time</h2>
+       <br />
+      <h3 id="city">Victoria</h3>
+      <h4 class="temperature" id="temperature">17°</h4>
+          <div class="row">
+          <div class="col-5">
+            <div class="clearfix">
+              <div style="font-size: 4rem; width: 100%; text-align: left">
+                ⛅
+              </div>
+            </div>
+          </div>
+          <div class="col-5">
+              <li class="precipitation"> Precipitation: 3%</li>
+              <li class="humidity">Humidity: 70%</li>
+             <li class="wind">Wind: 7/mph</li>
+            </ul>
+          </div>
+            <div class="row">
+            <div class="col">
+              <div class="mon">Monday</div>
+            </div>
+            <div class="col">
+              <div class="tues">Tuesday</div>
+            </div>
+            <div class="col">
+              <div class="wed">Wednesday</div>
+            </div>
+            <div class="col">
+              <div class="thurs">Thursday</div>
+            </div>
+            <div class="col">
+              <div class="fri">Friday</div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <h5 class="emoji">☀️</h5>
+            </div>
+            <div class="col">
+              <h5 class="emoji">🌩️</h5>
+            </div>
+            <div class="col">
+              <h5 class="emoji">🌤️</h5>
+            </div>
+            <div class="col">
+              <h5 class="emoji">🌦️</h5>
+            </div>
+            <div class="col">
+              <h5 class="emoji">☀️</h5>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="temperature-monday">16°</div>
+            </div>
+            <div class="col">
+              <div class="temperature-tuesday">12°</div>
+            </div>
+            <div class="col">
+              <div class="temperature-wednesday">9°</div>
+            </div>
+            <div class="col">
+              <div class="temperature-thursday">11°</div>
+            </div>
+            <div class="col">
+              <div class="temperature-friday">17°</div>
+            </div>
+          </div>
+          </div>
+          </body>
+          <script src="week6.js"></script>
+          <a href="https://github.com/17celeste/weather-app.git">17celeste GitHub Link</a>
+</html>
+
